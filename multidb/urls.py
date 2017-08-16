@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from mi_app_2.views import insertar
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^insertar/', insertar),
 ]
